@@ -21,4 +21,10 @@ For all of the above, well-established techniques exist for sampling (mostly rej
 
 One can further generalise this by having mutually exciting processes, but at this point the classical schemes for sampling and inderence start to break down.
 
-The second part of the tutorial 
+The second part of the tutorial focuessed on a few more complex examples around modelling temporal point processes, and the question of how to uncover cluster assignments from event data where the underlying cluster is not homogeneous. 
+
+For complex, analytically untractable real-world temporal dynamics, the Neural Hawkes process was introduced (see the [original paper by Mei and Eisner](https://papers.nips.cc/paper/7252-the-neural-hawkes-process-a-neurally-self-modulating-multivariate-point-process.pdf)), which is a self-exciting process, but unlike in the classical Hawkes process, the intensity dynamics are modelled with an RNN.
+
+Once a process has been modelled and calibrated, we can use it to make predictions, but also to build a generative model using a GAN architecture and the Wasserstein distance. This was followed by a brief description on how to uncover (Granger) causality from multivariate Hawkes processes.
+
+In the last section of the tutorial the relation to Reinforcement Learning (RL) and Control were discussed, with examples to choosing post times on social networks to optimize feed rankings (i.e. where does your post appear in your followers/friends feed when they next look at it after you posted) and learning an optimal repetition policy for learning vocabulary. While easier settings can be solved with classical stochastic control techniques (basically solvong the HJB equation), in situations that either cannot be modelled with stochastic differential equations or where the objective function is intractable, a RL-based policy optimization approach has to be used.
