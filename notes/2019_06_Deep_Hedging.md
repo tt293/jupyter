@@ -49,3 +49,4 @@ $$ \pi_M(X) = \inf_{\theta \in \Theta_M} E(X + (\delta \cdot S)_T - C_T(\delta))
 One example of such a risk measure is the $\alpha$-CVaR measure 
 
 $$ E(X) = \sup_{w \in \mathbb{R}} \{ w - \lambda \mathbb{E}[(w-X)^+] \} $$ (7)
+
